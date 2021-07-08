@@ -206,3 +206,23 @@ export default function App() {
     );
 }
 ```
+# Addig dotenv
+## Installing Packages
+```
+npm i -D dotenv-webpack
+```
+
+## Adding dotenv plugin to webpack config
+webpack.config.js
+```js
+...
+const DotEnv = require("dotenv-webpack");
+
+module.exports = {
+    ...
+    plugins: [
+        new DotEnv(),
+    ],
+    ...
+};
+```
